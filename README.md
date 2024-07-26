@@ -12,5 +12,6 @@ assertion `left == right` failed: Times were not equal
  right: Instant { seconds_since_unix_epoch: 2419200 }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
+Where `left` is the Instant returned from `Clock::current_time_rounded_to_minutes()` and `right` is the Instant returned from `Clock::current_time_rounded_to_seconds()` 
 
 This was tested on MacOS using Rust 1.77.2 and Scrypto 1.2.0
